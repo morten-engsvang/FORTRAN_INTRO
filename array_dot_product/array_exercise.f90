@@ -3,7 +3,8 @@ PROGRAM array_exercise
         INTEGER, PARAMETER :: dp = SELECTED_REAL_KIND(15,307)
         REAL(dp), DIMENSION(3) :: x, y
         REAL(dp) :: z
-        WRITE(*,*) "Please enter 2 arrays of length 3.\nFirst vector:"
+        WRITE(*,*) "Please enter 2 arrays of length 3."
+        WRITE(*,*) "First vector:"
         READ(*,*) x
         WRITE(*,*) "Second vector:"
         READ(*,*) y
