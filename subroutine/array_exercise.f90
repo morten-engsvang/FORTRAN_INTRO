@@ -14,6 +14,7 @@ PROGRAM array_exercise
         
         CONTAINS
         SUBROUTINE dotprod(a,b,c)
+                IMPLICIT NONE
                 REAL(dp), DIMENSION(3) :: a, b
                 REAL(dp) :: c
                 c = sum(a*b)
