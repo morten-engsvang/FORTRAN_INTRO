@@ -16,4 +16,4 @@ array_exercise.o: array_exercise.f90
 	$(GF) -c $< -o $@
 
 clean:
-	$(RM) array_exercise *.o *.mod
+	$(RM) array_exercise *.o *.mod *.dat

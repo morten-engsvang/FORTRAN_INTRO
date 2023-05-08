@@ -11,5 +11,9 @@ PROGRAM array_exercise
         READ(*,*) y
         !z = sum(x*y)
         call dotprod(x,y,z)
-        WRITE(*,*) "The dot product is: ", z
+        OPEN(11, file="dotproduct.dat")
+        WRITE(11, "(a, f6.3)") "The dot product is: ", z
+        CLOSE(11)
+        WRITE(*,*)
+        WRITE(*,*) "Output written to file dotproduct.dat"
 END PROGRAM array_exercise
