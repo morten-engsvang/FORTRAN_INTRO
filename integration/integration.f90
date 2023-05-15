@@ -7,7 +7,10 @@ PROGRAM integration
         REAL(dp), PARAMETER :: b = pi/2.0 ! End of range
         INTEGER :: m ! # of increments
         REAL(dp) :: value ! Value of the integral
-        DO m = 1, 20, 1
-                CALL value = integrate(a,b,m)
+        WRITE(*,*) a,b
+        DO m = 1, 10000, 1
+                WRITE(*,*) "value of m: ", m
+                value = integrate(a,b,m)
+                WRITE(*,*) "integral value of: ", value
         END DO
 END PROGRAM integration
