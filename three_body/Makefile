@@ -1,5 +1,5 @@
 GF = gfortran
-OBJ = rkf45_mod.o main.o
+OBJ = runge_kutta_mod.o main.o
 .PHONY: default
 
 default: main
@@ -7,7 +7,7 @@ default: main
 main: $(OBJ)
 	$(GF) $(OBJ) -o $@
 
-rkf45_mod.o: rkf45_mod.f90
+runge_kutta_mod.o: runge_kutta_mod.f90
 	$(GF) -c $< -o $@
 
 main.o: main.f90
