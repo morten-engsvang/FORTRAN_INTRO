@@ -7,9 +7,9 @@ subroutine calc_derivatives(time, variables, derivatives)
   real(dp) :: time
   real(dp), dimension(12) :: variables
   real(dp), dimension(12) :: derivatives
-  real(dp) :: m_1 = 1.0 ! Mass of particle 1
-  real(dp) :: m_2 = 1.0 ! Mass of particle 2
-  real(dp) :: m_3 = 1.0 ! Mass of particle 3
+  real(dp) :: m_1 = 10000.0 ! Mass of particle 1
+  real(dp) :: m_2 = 200.0 ! Mass of particle 2
+  real(dp) :: m_3 = 100.0 ! Mass of particle 3
   real(dp) :: D_12, D_13, D_23 ! Distances between the "particles"
   D_12 = sqrt((variables(1)-variables(5))**2+(variables(2)-variables(6))**2)
   D_13 = sqrt((variables(1)-variables(9))**2+(variables(2)-variables(10))**2)
